@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Finder Advanced</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book Finder</h1>
+    <p>Explore and discover your favorite books instantly</p>
+  </header>
+
+  <div class="container">
+    <!-- Fixed Sidebar -->
+    <aside>
+      <h3>Genres</h3>
+      <ul>
+        <li>Programming</li>
+        <li>Fiction</li>
+        <li>History</li>
+        <li>Science</li>
+        <li>Biography</li>
+      </ul>
+
+      <h3>Popular Authors</h3>
+      <ul>
+        <li>J.K. Rowling</li>
+        <li>Stephen King</li>
+        <li>Isaac Asimov</li>
+        <li>Agatha Christie</li>
+        <li>Mark Twain</li>
+      </ul>
+
+      <h3>About the App</h3>
+      <p>Book Finder lets you explore books instantly. Click on a book to see more information!</p>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search books by title...">
+        <button id="searchBtn">Search</button>
+      </div>
+      <div id="results" class="grid"></div>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Book Finder | Designed by Yamini</p>
+  </footer>
+
+  <!-- Modal for book details -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalAuthor"></p>
+      <p id="modalYear"></p>
+      <p id="modalSubjects"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
